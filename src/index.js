@@ -6,21 +6,36 @@ export class JumpingLetters extends Component {
   constructor(props) {
     super(props);
     this.string = props.phrase.split('');
-    this.speed = this.props.speed || 120;
-    this.strength = this.props.strength || 2;
   }
 
   componentDidMount() {
-    this.interval = setInterval(() => {
-      this.setState({});
-    }, this.speed);
+    this.setInterval();
   }
 
+  componentWillReceiveProps(nextProps) {
+    if (nextProps.speed !== this.props.speed) {
+      this.clearInterval();
+      this.setInterval(nextProps.speed);
+    }
+  }
+  
   componentWillUnmount() {
+    this.clearInterval();
+  }
+
+  setInterval = (speed) => {
+    const intervalSpeed = speed || this.props.speed;
+    this.interval = setInterval(() => {
+      this.setState({});
+    }, intervalSpeed);
+  }
+
+  clearInterval = () => {
     clearInterval(this.interval);
   }
 
   render() {
+
     return (
       <div>
         {
@@ -29,7 +44,7 @@ export class JumpingLetters extends Component {
               <Letter
                 key={i}
                 letter={letter}
-                strength={this.strength}
+                strength={this.props.strength}
               />
             );
           })
