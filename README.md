@@ -24,14 +24,21 @@ import { JumpingLetters } from 'jumping-letters';
 var JumpingLetters = require('jumping-letters');
 
 // ...
-// The JumpingLetters component takes two props:
+// The JumpingLetters component takes three props:
+//
+// Phrase is the phrase you wish to output
 //
 // Strength is the number of pixels each letter can jump in pixels
 // (remember, this is both negative and positive pixels so it will be able to jump 4 pixels)
 //
 // Speed is the number of milliseconds between each re-render
 // (the higher the number, the slower it is)
-<JumpingLetters strength="2" speed="120" />
+<JumpingLetters phrase="Hello World!" strength="2" speed="120" />
+
+// If you want to have multiple lines you can split the word up using the "back slash" character ( \ )
+// e.g.
+<JumpingLetters phrase="Seperate\Lines" strength="2" speed="120" />
+// ...
 ```
 
 ## Contributing
