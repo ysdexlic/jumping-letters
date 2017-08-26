@@ -23,7 +23,8 @@
     "start": "webpack-dev-server --inline --progress",
     "lint": "eslint src/**; exit 0",
     "lint:watch": "esw -w src/**",
-    "build": "babel -d lib/ src/"
+    "build": "babel -d lib/ src/",
+    "build:watch": "babel -w -d lib/ src/"
   },
   "author": "David Thompson <david@thebeardydeveloper.com> (https://thebeardydeveloper.com)",
   "license": "ISC",
