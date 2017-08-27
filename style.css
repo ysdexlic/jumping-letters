@@ -187,7 +187,7 @@ textarea {
 @font-face {
   font-family: Luna;
   font-style: normal;
-  src: url("/style/fonts/Luna.ttf");
+  src: url("./fonts/Luna.ttf");
 }
 .jumping-text {
   font-family: Luna;
