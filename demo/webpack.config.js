@@ -7,7 +7,7 @@ module.exports = {
   },
   output: {
     path: path.resolve(__dirname, "build"),
-    publicPath: "./",
+    publicPath: "/jumping-letters",
     filename: "bundle.js"
   },
   plugins: [
@@ -43,7 +43,7 @@ module.exports = {
       },
       {
         test: /\.(eot|ttf|woff|woff2|otf)$/,
-        loader: 'file-loader?name=public/fonts/[name].[ext]'
+        loader: 'file-loader?name=./fonts/[name].[ext]'
       }
 
     ]

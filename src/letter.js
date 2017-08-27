@@ -4,12 +4,14 @@ import { randomizer } from './randomizer';
 export class Letter extends Component {
 
   render() {
-
     const letterStyle = {
       display: 'inline-block',
       position: 'relative',
       top: randomizer(this.props.strength) + 'px',
-      left: randomizer(this.props.strength) + 'px'
+      left: randomizer(this.props.strength) + 'px',
+      transition: this.props.smooth
+        ? `left ${this.props.speed/1000}s, top ${this.props.speed/1000}s`
+        : 'none'
     };
 
     if (this.props.letter === ' ') {

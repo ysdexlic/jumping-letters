@@ -2,7 +2,7 @@
 
 A React component for making text jump around on the page
 
-[Check out the Demo](https://ysdexlic.github.io/jumping-letters-demo)
+[Check out the Demo](https://ysdexlic.github.io/jumping-letters)
 
 ![Example](https://raw.githubusercontent.com/ysdexlic/ysdexlic.github.io/master/style/images/name.gif)
 
@@ -24,7 +24,7 @@ import { JumpingLetters } from 'jumping-letters';
 var JumpingLetters = require('jumping-letters');
 
 // ...
-// The JumpingLetters component takes three props:
+// The JumpingLetters component takes four props:
 //
 // Phrase is the phrase you wish to output
 //
@@ -33,11 +33,13 @@ var JumpingLetters = require('jumping-letters');
 //
 // Speed is the number of milliseconds between each re-render
 // (the higher the number, the slower it is)
-<JumpingLetters phrase="Hello World!" strength="2" speed="120" />
+//
+// Smooth is a boolean which adds transitions between renders
+<JumpingLetters phrase="Hello World!" strength="2" speed="120" smooth />
 
 // If you want to have multiple lines you can split the word up using the "back slash" character ( \ )
 // e.g.
-<JumpingLetters phrase="Seperate\Lines" strength="2" speed="120" />
+<JumpingLetters phrase="Seperate\Lines" strength="5" speed="150" />
 // ...
 ```
 

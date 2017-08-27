@@ -18,7 +18,7 @@ export class JumpingLetters extends Component {
       this.setInterval(nextProps.speed);
     }
   }
-  
+
   componentWillUnmount() {
     this.clearInterval();
   }
@@ -44,6 +44,8 @@ export class JumpingLetters extends Component {
               <Letter
                 key={i}
                 letter={letter}
+                smooth={this.props.smooth}
+                speed={this.props.speed}
                 strength={this.props.strength}
               />
             );

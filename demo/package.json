@@ -7,14 +7,14 @@
     "start": "webpack-dev-server --inline --progress",
     "build": "NODE_ENV=production webpack --progress -p --colors",
     "postbuild": "npm run copyassets && npm run stylus",
-    "copyassets": "mkdir -p build/style && mkdir -p build/style/fonts && cp -r style/fonts/* build/style/fonts",
-    "stylus": "stylus style/style.styl -o build/style/style.css",
+    "copyassets": "mkdir -p build/fonts && cp -r style/fonts/* build/fonts",
+    "stylus": "stylus style/style.styl -o build/style.css",
     "server": "node server"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "jumping-letters": "^1.1.0",
+    "jumping-letters": "^1.2.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1"
   },
