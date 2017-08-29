@@ -12,6 +12,8 @@ You can install `jumping-letters` with NPM.
 npm i jumping-letters --save
 ```
 
+Or find more info on it [here](https://www.npmjs.com/package/jumping-letters) 
+
 ## Usage
 
 ```js
