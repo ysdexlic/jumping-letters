@@ -4,9 +4,6 @@ A React component for making text jump around on the page
 
 [Check out the Demo](https://ysdexlic.github.io/jumping-letters)
 
-![Example](https://raw.githubusercontent.com/ysdexlic/ysdexlic.github.io/master/style/images/name.gif)
-
-
 ## Installing
 
 You can install `jumping-letters` with NPM.
