@@ -8,13 +8,20 @@ export class App extends Component {
 		this.state = {
 			strength: 2,
 			speed: 120,
-			smooth: true
+			smooth: true,
+			phrase: 'Jumping\\Letters'
 		}
 	}
 
 	handleCheckboxChange = (e) => {
 		this.setState({
 			[e.target.dataset.type]: e.target.checked
+		})
+	}
+
+	handleTextChange = (e) => {
+		this.setState({
+			[e.target.dataset.type]: e.target.value
 		})
 	}
 
@@ -32,10 +39,13 @@ export class App extends Component {
 		return (
 			<div id="app">
 				<div className="jumping-text">
-	        <JumpingLetters phrase="Jumping\Letters" strength={this.state.strength} speed={this.state.speed} smooth={this.state.smooth} />
+	        <JumpingLetters phrase={this.state.phrase} strength={this.state.strength} speed={this.state.speed} smooth={this.state.smooth} />
 	      </div>
 				<div>
-					<label>Strength</label>
+					<label>Phrase</label>
+					<span>(use \ backslash to create a new line)</span>
+					<input type="text" data-type="phrase" value={this.state.phrase} onChange={this.handleTextChange}/>
+					<label style={{marginTop: '40px'}}>Strength</label>
 					<span>(number of possible pixels to jump)</span>
 					<input type="number" data-type="strength" value={this.state.strength} onChange={this.handleChange}/>
 					<label style={{marginTop: '40px'}}>Speed</label>

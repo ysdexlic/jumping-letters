@@ -3,11 +3,6 @@ import Letter from './letter';
 
 export class JumpingLetters extends Component {
 
-  constructor(props) {
-    super(props);
-    this.string = props.phrase.split('');
-  }
-
   componentDidMount() {
     this.setInterval();
   }
@@ -35,6 +30,8 @@ export class JumpingLetters extends Component {
   }
 
   render() {
+
+    this.string = this.props.phrase.split('');
 
     return (
       <div>
