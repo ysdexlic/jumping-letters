@@ -1,8 +1,7 @@
 # :fire: Jumping Letters! :fire:
-[![Gemnasium](https://img.shields.io/gemnasium/bevacqua/awesome-badges.svg)](https://gemnasium.com/npms/jumping-letters)
 [![npm](https://img.shields.io/npm/dt/awesome-badges.svg)](https://www.npmjs.org/package/jumping-letters)
 
-A zero dependency React component for making text jump around on the page
+A React component for making text jump around on the page
 
 [Check out the Demo](https://ysdexlic.github.io/jumping-letters)
 
