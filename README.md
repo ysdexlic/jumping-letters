@@ -1,5 +1,5 @@
 # :fire: Jumping Letters! :fire:
-[![npm](https://img.shields.io/npm/dt/awesome-badges.svg)](https://www.npmjs.org/package/jumping-letters)
+[![npm](https://img.shields.io/npm/dm/jumping-letters.svg)](https://www.npmjs.org/package/jumping-letters)
 
 A React component for making text jump around on the page
 
