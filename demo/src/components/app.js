@@ -6,7 +6,7 @@ export class App extends Component {
 	constructor() {
 		super();
 		this.state = {
-			strength: 2,
+			strength: 8,
 			speed: 120,
 			smooth: true,
 			phrase: 'Jumping\\Letters'
